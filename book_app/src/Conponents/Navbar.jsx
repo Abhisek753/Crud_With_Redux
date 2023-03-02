@@ -1,0 +1,27 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Navbar = () => {
+  return (
+    <div style={{display:"flex",border:"1px solid red",justifyContent:"space-between"}}>
+      <div  style={{border:"1px solid red"}}>
+      <h1>Book Management</h1>
+
+      </div>
+      <div  style={{display:"flex", border:"1px solid green",padding:"4px",justifyContent:"space-evenly",width:"20%",alignItems:"center"}}>
+        
+      <Link to="/">
+        <button style={{backgroundColor:"tomato",padding:"4px"}}>Home</button>
+      </Link>
+      <Link to="/login">
+        <button style={{backgroundColor:"tomato",padding:"4px"}}>Log In</button>
+      </Link>
+      </div>
+
+
+
+    </div>
+  )
+}
+
+export default Navbar
