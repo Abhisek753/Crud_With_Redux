@@ -10,17 +10,17 @@ const SideBar = () => {
       </div>
       <div>
          <input type="checkbox" />
-        <label>Novel</label>
+        <label>Motivational</label>
 
       </div>
       <div>
         <input type="checkbox"/>
-        <label>Novel</label>
+        <label>Thriller</label>
 
       </div>
       <div>
          <input type="checkbox" />
-        <label>Novel</label>
+        <label>Science Fiction</label>
 
       </div>
 
