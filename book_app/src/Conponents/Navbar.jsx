@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div style={{display:"flex",border:"1px solid red",justifyContent:"space-between"}}>
-      <div  style={{border:"1px solid red"}}>
+    <div style={{display:"flex",justifyContent:"space-between",border:"1px solid black"}}>
+      <div  style={{border:"0px solid red"}}>
       <h1>Book Management</h1>
 
       </div>
-      <div  style={{display:"flex", border:"1px solid green",padding:"4px",justifyContent:"space-evenly",width:"20%",alignItems:"center"}}>
+      <div style={{border:"0px solid red",width:"20%",display:"flex",justifyContent:"center",alignItems:"center"}}>
+        <input placeholder='Search your books' type="text" style={{border:"2px solid black",width:"100%",height:"30%"}}/>
+      </div>
+      <div  style={{display:"flex",padding:"4px",justifyContent:"space-evenly",width:"20%",alignItems:"center"}}>
         
       <Link to="/">
         <button style={{backgroundColor:"tomato",padding:"4px"}}>Home</button>
