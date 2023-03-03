@@ -13,13 +13,13 @@ import { GET_BOOKS_FAILURE,
     return {type:GET_BOOKS_FAILURE}
    }
 
-  export const getBooks=(dispatch)=>{
+  export const getBooks=(param)=>(dispatch)=>{
    dispatch(getBookRequestAction());
     axios
-    .get("http://localhost:8080/books")
+    .get("http://localhost:8080/books",param)
     .then((res)=>{
       dispatch(getBookSuccessAction(res.data))
-      console.log(res)
+      // console.log(res)
     })
     .catch((err)=>{
       dispatch(getBookFailureAction())

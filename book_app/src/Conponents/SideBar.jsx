@@ -8,7 +8,7 @@ const SideBar = () => {
   const [category,setCategory]=useState(initialState||[])
 
 
-  console.log(category)
+  // console.log(category)
   const handleFilter=(e)=>{
    let newCategory=[...category]
 
