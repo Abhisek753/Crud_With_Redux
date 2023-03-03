@@ -13,10 +13,15 @@ export const BooksList = () => {
   const location =useLocation()
   const [searchParams]=useSearchParams();
   console.log(location)
+
   useEffect(()=>{
+    const order=searchParams.get("order")
     let paramObj={
       params:{
-        category:searchParams.getAll("category")
+        category:searchParams.getAll("category"),
+        _sort:order&&"release_year",
+        _order:order&& order
+        
       }
     }
 
